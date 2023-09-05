@@ -11,9 +11,13 @@ export class PropertyBindingComponent implements OnInit {
   imgWidth = 100
   
   ngOnInit(): void {
-    setInterval(() => {
-      this.imgWidth = Math.floor(Math.random() * 1000);
-    }, 1000);
+    
+    setInterval(this.geraNumeroAleatorio, 1000);
+
+  }
+
+  geraNumeroAleatorio() {
+    this.imgWidth = Math.floor(Math.random() * 1000);
   }
 
 
