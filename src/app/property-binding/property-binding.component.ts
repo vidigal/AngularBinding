@@ -7,18 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
 
-  minhaUrl = "https://i.pinimg.com/736x/ea/f7/15/eaf71544c4517c3b59f0bf59f330d07c.jpg"
-  imgWidth = 100
+  minhaUrl = "https://i.pinimg.com/736x/ea/f7/15/eaf71544c4517c3b59f0bf59f330d07c.jpg";
+  imgWidth = 100;
+  variavel = false;
   
   ngOnInit(): void {
     
-    setInterval(this.geraNumeroAleatorio, 1000);
+    setInterval(() => {
+      //this.variavel = !this.variavel;
+    }, 1000);
 
   }
 
-  geraNumeroAleatorio() {
-    this.imgWidth = Math.floor(Math.random() * 1000);
-  }
 
 
 }

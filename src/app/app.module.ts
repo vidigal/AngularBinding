@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopComponent,
     PrincipalComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    InterpolacaoComponent
   ],
   imports: [
     BrowserModule,
