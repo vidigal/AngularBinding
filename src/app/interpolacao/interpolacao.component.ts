@@ -11,7 +11,7 @@ export class InterpolacaoComponent {
 
 
   getSentence() {
-    return "I don't wanna die, but sometimes I want to not born at all"
+    return "I don't wanna die, but sometimes I wish ... born at all"
   }
 
 }

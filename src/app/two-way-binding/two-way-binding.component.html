@@ -1,0 +1,19 @@
+<h1>Two way binding</h1>
+
+<h2>Forma menos elegante</h2>
+<p>
+    <input type="text" #iptTexto
+    (input)="digitouCaractere(iptTexto.value)">
+</p>
+
+<p>
+    <input type="text" [value]="texto">
+</p>
+
+<h2>Forma correta, mais elegante</h2>
+<p>
+    <input type="text" [(ngModel)]="nome">
+</p>
+<p>
+    O texto digitado é {{ nome }}
+</p>

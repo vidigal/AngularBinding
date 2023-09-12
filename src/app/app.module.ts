@@ -7,6 +7,9 @@ import { TopComponent } from './top/top.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
     TopComponent,
     PrincipalComponent,
     PropertyBindingComponent,
-    InterpolacaoComponent
+    InterpolacaoComponent,
+    TwoWayBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
