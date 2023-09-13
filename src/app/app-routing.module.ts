@@ -5,6 +5,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 const routes: Routes = [
   {path: "", redirectTo: 'principal', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: "interpolacao", component: InterpolacaoComponent},
   {path: "two-way-binding", component: TwoWayBindingComponent},
   {path: "event-binding", component: EventBindingComponent},
+  {path: "formulario", component: FormularioComponent},
 ];
 
 @NgModule({
